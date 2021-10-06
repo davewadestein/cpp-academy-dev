@@ -1,0 +1,32 @@
+github.com
+
+One of many services offering hosting of git repos
+
+The repository for this course is
+http://github.com/pek-ia/cpp-academy
+
+It's a public repository, so I don't put anything there that would be confidential, trade secrets, or other private info.
+
+Important git commands on your computer
+
+Clone a remote repo to your machine
+
+git clone -v http://github.com/pek-ia/cpp-academy
+
+Stage new and or changed files for the next commit
+
+git add [filenames]
+
+Commit changes to your local repo
+
+git commit
+
+Save changes back to a remote repo
+
+git push
+
+(BUT!  you can't do this with my repo unless I give you a token)
+
+Update your local repo to match the remote one
+
+git pull
