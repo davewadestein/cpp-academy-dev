@@ -7,4 +7,4 @@
 3. cd to a directory where you'd like to work
 4. Clone this repository by entering the following command:
 
-   prompt> git clone -v https://github.com/pek-ia/cpp-academy-dev 
+   `git clone -v https://github.com/pek-ia/cpp-academy-dev` 
