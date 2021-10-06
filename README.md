@@ -8,3 +8,5 @@
 4. Clone this repository by entering the following command:
 
    `git clone -v https://github.com/pek-ia/cpp-academy-dev` 
+5. To update your local repo when I push changes, use
+   `TBD`
