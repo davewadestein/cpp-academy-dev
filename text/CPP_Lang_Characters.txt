@@ -1,0 +1,71 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+A character represents a unit of human script
+
+First thing you learn is your ABC's
+
+Has to be expressed (encoded) as a number
+Encodings
+ASCII
+ISO Latin-1
+Unicode
+
+Write code
+Input values to programs
+Output messages
+Used to communicate between people
+
+We are SO Lucky!!
+
+C++ source code depends on only 96 ASCII characters
+
+Alpha a-z and A-Z
+Numeric	0-9
+Punctuation
+
+Delimiters
+We love us our delimiters:
+
+{ }	Braces, or "Curly Braces"
+[ ]	Brackets, or "Square brackets"
+< >	"Angle brackets"
+( )	Parentheses, or "Parens"
+" "	Quotes, or "Double quotes"
+' '	Apostrophe, or "Single Quotes"
+
+
+We love our special characters, too!
+
+;	Semicolon	end of command
+
+

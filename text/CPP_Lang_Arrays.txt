@@ -1,0 +1,92 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+C-style array
+A list of values
+Same type
+Contiguous block of memory
+Can be allocated quickly as a chunk
+Values are accessed by an integer index
+Indices are zero-based
+
+Declare an array
+
+int lotto_numbers[6];
+
+Access an array element with []
+
+Store a value:
+
+lotto_numbers[0] = 19;
+lotto_numbers[1] = 12;
+
+Use a value
+
+auto first_number = lotto_numbers[0];
+auto second_number = lotto_numbers[1];
+
+Last index is sizeof(array) - 1
+
+
+
+
+
+Initializing an array
+
+int lotto_numbers[6] = {1,2,3,4,5,6};
+
+Shortcut
+
+int lotto_numbers[] = {1,2,3,4,5,6};
+
+The long way
+
+int lotto_numbers[6];
+for (int i=0, i<6; i++) {
+  lotto_numbers[i] = i;
+}
+
+int lotto_numbers[6] 
+
+
+Array Problems
+You must remember how big it is!
+No way to resize it
+If you need it bigger, there are two choices:
+Make a bigger one and copy all your old one into it
+Use C++ standard library containers!
+
+Multi-dimensional array
+
+May be declared statically, so:
+
+double transform_matrix[3][3];

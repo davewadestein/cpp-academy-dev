@@ -1,0 +1,30 @@
+Topic
+=====
+Static Analysis
+
+Searchwords: C++ static analysis misra
+
+TODO List:
+
+Static Code Analysis Tools
+"linters"
+
+Original tool was "lint", developed by Stephen C. Johnson in 1978 at Bell Labs
+Like a lint filter in a dryer
+
+Examine source code to find:
+
+Clumsy constructs
+Hard-to-read code
+Unused variables
+Dead code
+Incorrect argument types
+etc.
+
+Very important for verifying standards conformance
+MISRA, AUTOSAR, SEI CERT
+
+Some important tools
+
+
+

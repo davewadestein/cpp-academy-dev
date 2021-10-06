@@ -1,0 +1,65 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+The long dark night of the NULL-terminated character array
+
+char input_array[100];
+printf("Please enter your name\n");
+scanf("%s", input_array);  // hope it's big enough!
+printf("Hello %s", input_array);
+
+Making a new string is a hassle
+
+int name_length = strlen(input_array);
+char *name = new char[name_length + 1];  // Huh?
+
+Copying strings is a nightmare:
+
+strcpy(input_array, name);
+
+And you'd better remember to free them!
+
+// Will no one rid me of this turbulent text?
+// but when?
+delete[] name;
+
+In summary
+
+The Horror.  The Horror.
+
+std::string saves the day when dealing with text!
+
+std::cout << "Enter your name, please:\n"
+
+std::string name;
+std::cin >> name;
+std::cout << "Hello " + name;

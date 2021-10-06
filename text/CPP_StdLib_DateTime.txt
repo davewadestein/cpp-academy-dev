@@ -1,0 +1,44 @@
+Dates and times
+
+The C date and time library
+
+Measured time since the beginning of the UNIX epoch
+1 Jan 1970
+
+
+The chrono library
+
+Clock
+Starts at a specified time (epoch) and ticks at a specified rate
+
+std::chrono::steady_clock myclock();
+
+Time point
+The time as returned by a particular clock, relative to its starting epoch
+
+Duration
+An interval defined as a number of ticks of a specified unit
+
+Example:
+std::chrono::seconds{20};
+
+Times Of Day
+
+Calendar
+
+in std::chrono namespace
+
+std::chrono::system_clock
+
+Provides wall clock time from the system-wide realtime clock
+May be adjusted by system, so could run backwards momentarily
+
+std::chrono::steady_clock
+
+Monotonic clock that will never be adjusted
+
+high_resolution_clock
+A clock with the shortest tick period available
+Implementation dependent - sometimes used for measuring performance of a function call
+
+Example:  clocks_and_times.cpp

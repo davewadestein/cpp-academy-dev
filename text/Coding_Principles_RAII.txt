@@ -1,0 +1,87 @@
+Topic
+=====
+
+RAII
+Resource Acquisition Is Initialization
+
+Initialization
+Acquire some resources
+
+Do it
+Use resources
+
+Clean up
+Put resources away neatly
+
+Example:
+You want to read a message from a web service
+You don't want to block your current thread
+
+You'll need:
+A separate thread
+An HTTP connection to a specified URL
+A mutex
+An atomic variable to use as a flag
+A shared buffer to save the value
+
+You could write a lot of code
+
+Initialize atomic
+create thread
+create connection
+read connection
+lock mutex
+
+put message in a shared buffer
+set flag to indicate that message is available
+
+unlock mutex
+close connection
+exit thread
+
+Soooo procedural
+So many things to overlook
+
+RAII in OO programming
+
+Don't think of this as a long set of operations
+
+Think of it as the lifetime of an object
+
+Construction
+allocate resources in ctor
+
+Lifetime
+Call member functions to use resources, if necessary
+
+Destruction
+free resources in dtor
+
+Of course, all well-behaved sub-objects will take care of themselves
+
+
+
+void get_part_from_restful_catalog(std::string& part_number){
+{
+  std::string my_base_url = "http://example.com/rest/product_catalog?";
+  std::string param_list = "partno=" + part_number;
+ 
+  HttpRestServiceAccessor hrsa { my_base_url };
+
+  hrsa.get( param_list);
+
+
+  // hmg, my_base_url, param_list go out of scope
+} 
+
+The RAII pattern can be used on many types of transient resources
+
+Objects
+Connections
+Memory
+Mutexes
+Threads
+Files
+strings
+
+Example: the_talking_stick.cpp

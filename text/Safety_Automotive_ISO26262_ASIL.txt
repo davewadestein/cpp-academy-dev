@@ -1,0 +1,146 @@
+Automotive Safety
+
+Safety = Controllability / Risk
+
+Risk = Probability X Severity
+
+Severity
+
+Oddity
+Annoyance
+Inconvenience
+Loss of functionality
+Loss of product
+Danger to health
+Danger to life
+Mass Destruction
+
+Probability
+
+Impossible
+Eliminated
+Rare
+Unlikely
+Possible
+Likely
+Certain
+
+You can make a risk matrix:
+
+Everything is Risky
+
+Yes, but...
+
+How much risk can you afford?
+In lives and injuries
+In dollars
+In product functionality
+In customer loyalty
+
+Controlling Risk
+
+From hardware to human, we can often control risk
+
+Clear coding standards
+Design reviews
+Best practices
+Factors of safety in design
+Extra capacity
+Back-up systems
+Fail-safe mechanisms
+Support infrastructure
+Training and skill
+Willingness to accept help
+
+"Safety is Job Number One"
+
+Yes, but...
+
+How much Safety can you afford?
+Dollars
+Time
+Infrastructure
+Hardware
+Materials
+People
+Complexity
+
+Safety in a Problem Domain
+
+Each domain has its own
+Risk classifications
+Probability classifications
+Mitigation Strategies
+Costs
+
+Financial
+Aerospace
+Automotive
+Health and Medicine
+Software Development
+Security
+etc.
+
+There are many specifications
+ASIL
+ISO
+DoD
+NASA
+
+Safety for the Automotive Industry
+
+ISO 26262 - Functional Safety for Road Vehicles
+Part 9 - Automotive Safety Integrity Level
+Automotive Safety Integrity Level (ASIL)
+
+Severity
+    S0 No Injuries
+    S1 Light to moderate injuries
+    S2 Severe to life-threatening (survival probable) injuries
+    S3 Life-threatening (survival uncertain) to fatal injuries
+
+Exposure
+    E0 Incredibly unlikely
+    E1 Very low probability (injury could happen only in rare operating conditions)
+    E2 Low probability
+    E3 Medium probability
+    E4 High probability (injury could happen under most operating conditions)
+
+Controllability
+
+    C0 Controllable in general
+    C1 Simply controllable
+    C2 Normally controllable (most drivers could act to prevent injury)
+    C3 Difficult to control or uncontrollable
+
+So S3 E4 C3 is super dangerous
+
+
+
+Refining ASIL
+
+SAE International (formerly Society of Automotive Engineers)
+J2980_201804
+Considerations for ISO 26262 ASIL Hazard Classification
+
+Methodology for determining ASIL specifically
+Vehicle motion control systems
+Cars up to 3.5 metric tons
+OMG, just your average self-driving cars!!
+
+Other related specs
+
+J3018_201909
+Safety-Relevant Guidance for On-Road Testing of SAE Level 3, 4, and 5 Prototype Automated Driving System (ADS)-Operated Vehicles
+
+J3061_201601
+Cybersecurity Guidebook for Cyber-Physical Vehicle Systems
+
+J2808_201701
+Lane Departure Warning Systems: Information for the Human Interface
+
+Many more at https://www.sae.org/standards
+
+Example TBD
+
+

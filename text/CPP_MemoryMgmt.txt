@@ -1,0 +1,89 @@
+The C++ Memory Model
+
+Fundamental unit is a byte
+At least 8 contiguous bits
+Uniquely addressable
+
+Available memory
+One or more sequences of contiguous bytes
+
+Simple, right?
+
+Standalone implementations
+Very system-specific
+Address space may be fixed, preallocated
+Limits are declared by constants in system header
+
+Hosted implementation
+
+Operating system provides abstraction layer
+Allocates memory on a per-process basis
+
+Statically allocated Memory
+Memory that is pre-allocated by a program before it starts
+
+global variables
+static variables
+
+
+
+Dynamically allocated Memory
+
+System routines
+---------------
+From the bad old days
+brk, sbrk - change data segment size
+Break is first location after uninitialized data segment
+
+Synopsis
+
+#include <unistd.h>
+
+int brk(void *addr);  // Sets address explicitly if it is reasonable
+returns 0 (success) or -1 (fail)
+void *sbrk(intptr_t increment); // Sets address by incrementing
+on success, returns previous break value, which is start of new allocation
+on fail, returns (void *) -1
+errno is set to ENOMEM on fail
+
+Non-portable, removed from POSIX
+
+Portable, part of C Standard Library
+
+malloc, free, calloc, realloc - allocate and free dynamic memory
+Synopsis
+
+#include <stdlib.h>
+
+void *malloc(size_t size);
+void free(void *ptr);
+void *calloc(size_t nmemb, size_t size);
+void *realloc(void *ptr, size_t size);
+
+
+Portable, part of C++ language
+
+operator new
+operator delete
+operator new[]
+operator delete[]
+
+May be overloaded for particular classes and data types
+
+Placement new can use static storage
+
+Layered on Top of a user-replaceable Memory Manager!
+
+Optimized for a particular use case
+May allocate in fixed size chunks
+May allocate from arenas
+May save and reuse chunks
+May maintain pools, circular buffers, and weird stuff
+
+
+new/delete
+  -> malloc/free
+    -> memory manager
+      -> _sbrk or bare metal
+ 
+

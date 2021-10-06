@@ -1,0 +1,141 @@
+We think of memory as a vast expanse...
+
+But really, it's limited
+How much real memory is available
+Our ability to use it as we want
+How fast information can be moved in/out
+What controls it
+Whether access is blocking
+
+
+"Ah but a man's reach should exceed his grasp, or what's a Heaven for?"
+Robert Browning
+
+Chunks of memory
+
+byte
+word
+page
+file
+
+Address Space
+Each unit of memory has a numeric address
+What is a unit?
+Modern computers
+Usually a byte (an 8-bit chunk)
+Byte-addressable
+Old computers
+Often a word, size varies
+Word-addressable
+
+
+
+Real or Virtual?
+
+First of all, memory may be real or virtual
+
+"Real" memory exists in H/W, within the grasp of the CPU
+
+CPU is like a chipper/shredder; you gotta feed it efficiently or you're just wasting gas and time
+
+Even "real" memory comes in layers
+Expensive and limited
+
+CPU registers	Incredibly fast, part of the CPU itself
+Cache	Really fast, on CPU chip
+On Memory Bus	Very fast	"Primary" storage
+On I/O Bus	Not as fast	"Secondary" storage
+Anywhere else	Slow as mud	File system, network, etc.
+
+Cheap, and plentiful
+
+Types of primary memory
+EEPROM
+SRAM
+DRAM
+
+Virtual Memory
+Map addresses from a very large address space
+2^32 addressable bytes
+to a (much smaller) real set of addresses
+OS and HW work together to make this go fast
+MMU - assists mapping in hardware
+OS - agrees to remap only infrequently, and in reasonably-sized chunks
+
+Each process has its own virtual address space
+Memory mapping is part of process information
+Switching between processes "context switch" is relatively expensive
+
+Attempts to use unmapped memory are detected by OS/HW
+Usually kills your program with a signal
+
+Address space
+A virtual address space looks pretty big!
+Size of a pointer
+
+Paging
+a memory management scheme
+computer stores and retrieves data from secondary storage for use in main memory. 
+Data is retrieved in same-size blocks called pages
+
+Memory bus, I/O bus, even disks and networks are often optimized for page transfers
+
+Blocking Reads/Writes
+
+Reading/writing operations may have to stop and wait
+Best case:
+Everything is there when you need it, and ready to go
+
+Cache	Wait to page from primary
+Primary	Wait to pages from secondary
+Secondary	Wait to page from disk
+Disk	Wait for disk to spin around
+Network	Wait for bytes to trickle through
+Database	Wait for query to fetch results
+
+Efficiency depends on cacheing and anticipating needs for "customary" workflows
+A very hard problem!
+
+Memory Protection
+
+Just because you own it doesn't mean you should change it
+A chip or an OS may offer ways to prevent access to some parts
+
+Uses of memory	Executable	Readable	Writable
+Program memory	?	?	?
+Data memory	?	?	?	
+Constant values	?	?	?
+Memory addresses mapped to I/O devices	?	?	?
+Constants	?	?	?
+System
+
+Bad Addresses
+Some accesses are always wrong!
+NULL address
+Memory beyond the current program break
+Kernel memory
+Attempt results in Segmentation Fault
+
+Some accesses are wrong in most cases
+Read/Write to text section
+Write to constants
+
+Some are dangerous but interesting in edge cases
+Set PC to data section
+Placement new operator in C++
+
+
+Typical Layout of Memory in a UNIX Process
+
+Code section
+
+Data Section
+
+Stack
+
+Heap
+
+System address space
+
+
+

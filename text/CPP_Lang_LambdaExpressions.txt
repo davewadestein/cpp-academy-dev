@@ -1,0 +1,63 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+A Lambda is an unnamed function declaration
+May be assigned to a variable
+Allows code to be passed like data
+
+Syntax:
+
+[ captures ] ( params ) lambda-specifiers requires(optional) { function-body }
+
+Example:  Lambda provides code for a thread
+
+auto code_to_run = []{ // code };
+thread t(code_to_run);
+
+A lambda can capture variables that are in scope 
+By value
+By reference
+
+Therefore, a lambda can use or modify variables in the declaring scope
+While being called (with parameters) in another scope
+
+Example: Lambda used to sort objects in a container
+
+You want to keep three things logically separate:
+1. The container and its internal organization (linked list, binary tree, etc.)
+2. The algorithm that does the sorting
+3. The criteria that will be used to compare objects 
+
+Solution:
+A standard container
+A standard algorithm
+A lambda to provide the comparison

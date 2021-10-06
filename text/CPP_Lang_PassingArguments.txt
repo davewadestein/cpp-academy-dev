@@ -1,0 +1,118 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+Arguments are the values passed to a function when it is called
+
+By default, basic types are passed by value
+Copy semantics
+A function has its own copy of the value in its own variable
+Can act on it without affecting the caller
+
+int main(){
+	int x = 12;
+	int y = 13;
+	int z = add (x, y);
+}
+
+int add ( int a, int b ){
+	a += b;
+	return a;
+}
+
+It's clean
+It's isolated
+No side effects
+
+Copying an integer doesn't take much time or memory
+What about this?
+
+int main(){
+	Investment x{ /* 20 thousand bytes of data */ };
+	Investment y{ /* 20 thousand bytes of data */ };
+	Investment z = accumulate (x, y);
+}
+
+Investment accumulate ( Investment a, Investment b ){
+	Investment c = a + b;
+	return c;
+}
+
+It's clean
+It's isolated
+It's slow as molasses
+
+
+Yikes!
+
+Lots of C++ history revolves around dealing with this
+Cut down on the copies!!!
+
+Passing a pointer
+
+int main(){
+	int x = 12;
+	int y = 13;
+	accumulate (&x, &y);  // x changed by side-effect
+}
+
+void accumulate ( int *a, int *b ){
+	*a += *b;
+}
+
+Caller's variable is changed by side effect
+
+It's ugly
+Both the caller and the function have to do something special
+It's not isolated - has side effects
+It's fast
+
+References
+
+int main(){
+	int x = 12;
+	int y = 13;
+	accumulate (x, y);  // x changed by side-effect
+}
+
+void accumulate ( int & a, int & b ){
+	a += b;
+}
+
+Caller's variable is changed by side effect
+
+It's clean
+It's fast
+It's not isolated
+
+
+
+

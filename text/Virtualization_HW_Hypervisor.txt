@@ -1,0 +1,56 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+Virtualization
+
+Presents an imaginary world that you can pretend that you own
+
+Type 1 Hypervisor
+HW -> Hypervisor -> VMs
+Examples:
+VMWare xSphere
+Linux KVM
+Microsoft Hyper-V
+Oracle VM
+Citrix
+
+Type 2 Hypervisor
+HW -> Host OS -> Type 2 Hypervisor -> "Guest" VMs
+Oracle VM Virtualbox (free)
+VMWare Workstation Pro/Workstation Player (free)
+
+Can you nest them??
+
+Yes, actually
+
+Docker virtualization
+

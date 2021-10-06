@@ -1,0 +1,48 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+
+Fundamental Data Types
+Primitive
+Occupy a single slot in memory
+Fit into a machine register
+Values have no semantics
+
+Integer Types
+Floating Point Types
+Numeric Literals
+Characters
+Character Literals
+Strings
+String Literals
+Promotion and Truncation
+Overflow and Wrapping

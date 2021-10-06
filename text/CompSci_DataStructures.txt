@@ -1,0 +1,34 @@
+
+Basic integer types
+
+bool
+char
+short
+int
+long
+long long
+float
+double
+long double
+
+Array types
+
+char arrays
+
+C-style NULL-terminated strings
+
+arrays of pointers
+
+Multi-dimensional array
+
+Compound types
+
+fixed-length stuctures
+
+Linked List
+Binary Tree
+Associative Array
+Hash Maps
+
+Library Types in C++
+

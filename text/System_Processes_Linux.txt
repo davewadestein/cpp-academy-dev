@@ -1,0 +1,54 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+A process is TBD
+Has an owner
+
+Has controlled access to system resources
+Memory
+I/O devices
+Sensors
+CPU cycles
+Threads
+
+Runs as scheduled by Operating System
+
+In the process memory:
+"Command line" arguments
+Environment variables
+Code
+Data
+
+Good news
+You can pretend you own the entire world (what you can see of it)
+Bad news
+You don't

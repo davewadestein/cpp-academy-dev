@@ -1,0 +1,72 @@
+Header Files
+A place to put definitions that are needed by more than one translation unit
+
+type definitions, function prototypes
+Conventional suffix is .h
+
+Rule of thumb: Include what you use
+
+#include directive insert contents of a file as though typed in place
+
+Two styles
+#include <name>
+Include from a special system directory that the compiler knows about
+Everything in Standard Library
+
+#include "name"
+Include from a directory that can be set at compile time
+gcc  -I/src/nifty/include  nifty.cpp
+
+
+C++ Standard Library headers
+#include <libname>
+
+C Standard Library headers (repackaged for C++)
+#include <clibname>
+
+System Library headers (system dependent)
+
+#include "sys/types.h"
+
+Programmer-defined header file in current directory
+#include "nifty_class.h"
+
+#include "/path/to/my/Header.h"
+
+Relative paths are OK too
+#include "../include/Foo.h"
+
+
+
+Demo: OTG
+
+Single Definition Rule
+
+Each type, function, or variable must be declared once
+Multiple declarations in the same scope are NOT OK
+Caught by the compiler
+
+#Example: single_definition_rule.cpp
+
+Multiple declarations in different scopes MAY be OK
+But can cause confusion
+
+#Demo: OTG
+
+Header file Hell
+
+What happens if I include two header files and they declare the same name?
+
+Solutions:
+Namespaces
+Local type declarations
+
+What happens if a header file includes another header file
+
+Solution:
+Header file guards
+Order of includes
+
+Link: http://www.cplusplus.com/forum/articles/10627/
+
+Demo: OTG

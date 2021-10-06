@@ -1,0 +1,86 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+The preprocessor prepare source code for the compiler
+Produces a single (possibly large) file for each compilation unit
+
+Includes contents of other files
+
+#include "MovieTicket.h"
+
+Can define preprocessor variables
+Features that can be tested
+Exist/noexist
+#ifdef FOO
+#else
+#endif
+
+#ifndef FOO
+#else
+#endif
+
+By convention, names are ALL_CAPS_WITH_UNDERSCORES
+No namespaces, so names better not collide
+Long names better
+Names that start with _ are reserved for the use of the toolchain!
+
+Header File Guards
+
+#ifndef CINEMA_MOVIE_TICKET_H
+#define CINEMA_MOVIE_TICKET_H
+
+struct MovieTicket {
+  int day_of_year;
+  int show_of_day;
+  double price;
+}
+
+#endif
+
+Compile-time substitution of constant values
+
+#define AFFIRMATIVE_ANSWER "You betcha!"
+#define NEGATIVE_ANSWER "Nope. No way."
+
+Conditional Compilation
+
+
+Does textual substitution - macros
+
+Macros
+
+An ancient and respected part of C/C++
+
+Lexical substitution based on presence or absence of a variable
+Provides alternative declarations depending on system features
+
+#ifdef 

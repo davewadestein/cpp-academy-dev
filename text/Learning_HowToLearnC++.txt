@@ -1,0 +1,165 @@
+Topic
+=====
+
+Description
+-----------
+Getting yourself and your workspace ready to learn C++
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+C++ is a lot like any human language
+Roots in older languages
+Changes over time
+Adopts features of other languages
+Has recognizable periods of use
+	Latin	Germanic  French	Vowel shift		
+
+Celtic
+Common Brittonic
+Old English
+Middle English
+Early Modern
+Modern
+Hipster Ironic Futurespeak
+
+Some ancient forms survive 
+
+C
+C with classes
+C++
+C++98
+C++03
+C++11
+C++14
+C++17
+C++20
+
+Ancient	Classical	Early Modern	Modern
+
+Has many local dialects and contexts
+People love to bicker about very closely related languages British, Australian
+Often constrainted by context
+Inspires hot disagreement over what is "real" English, and whether there are any other languages worth mentioning at all (there are)
+
+Read the manuals
+There's often several ways to do the same thing
+Old C way
+Classic C++ way
+Modern C++ way
+Ask for others' opinions; don't be surprised if they have strong feelings
+Stay calm
+Sense of humor
+Be adaptable
+Be methodical
+Resilience
+
+
+
+How to learn it
+
+Be a Protagonist in your Adventure
+
+Don't be a Hero
+It's way too stressful
+Hero
+We admire them
+Has to have superpowers
+Never really fails
+Never makes mistakes
+Already knows it all
+Lives and dies by the sword
+
+Protagonist
+We root for them
+Have human powers
+Make mistakes
+Learn by doing
+Get caught up in exciting things and have adventures
+Often have happy endings
+
+Get Over Your Ego
+Don't fear sharing
+This thing is huge, with plenty for everyone
+Nobody is going to eat it all before you get there
+Don't fear failure
+You literally can't break the machine in class
+My Rubric is Holistic - you can't fail
+Don't be embarrassed
+I already made all the mistakes I could think of
+I left for you so you woudn't feel left out
+Savor your successes
+
+Be a Hummingbird
+Sip, don't gulp
+Explore a lot
+Defend your flowers!
+Look at references even if you don't completely understand them
+
+Go slow
+Use it
+Read it
+Write some things over and over until they feel right
+Lean on your tools
+Lean on your peers
+Consult expert viewpoints to understand WHY
+
+Go slow
+Think
+Make a plan
+Plans are Nothing; Planning is Everything. - Ed Repic
+
+WHY HOW WHAT
+ 
+Decide WHAT you want as an end result
+Analyze HOW to get it 
+Consider WHY you should choose one way over another
+
+Consolidate memory
+Slow down and read word by word
+Read and repeat out loud
+Say it in other words
+Try it
+Repeat
+Take a break
+Sleep on it
+
+
+Work with a net!
+Backups
+Code Management
+IntelliSense / Code completion
+Debugger
+
+Get Comfy
+Don't starve, don't glut
+Take bathroom breaks
+Hydrate
+Stand up and stretch!
+Have some treats nearby
+
+Ergonomic Setup with keyboard and monitor at the right height
+Large screen(s)
+Decent lighting
+A really good keyboard and mouse
+A comfortable chair
+A pleasant windows theme
+Reading glasses
+Footrest, armrest
+Keyboard stand
+
+

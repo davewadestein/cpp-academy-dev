@@ -1,0 +1,21 @@
+Topic
+=====
+SEI CERT
+
+TODO List:
+
+Software Engineering Institute 
+at Carnegie Mellon University
+
+Link: https://www.sei.cmu.edu/
+"The birthplace of Cybersecurity"
+
+SEI External Wiki Home
+Link: https://wiki.sei.cmu.edu/confluence/display/HOME/SEI+External+Wiki+Home
+
+SEI CERT C++ Coding Standard
+https://wiki.sei.cmu.edu/confluence/display/cplusplus
+
+SEI CERT C Coding Standard
+Link:  https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard
+

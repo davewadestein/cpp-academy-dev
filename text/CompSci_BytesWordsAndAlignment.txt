@@ -1,0 +1,146 @@
+Thinking in binary
+
+We have ten fingers, so we think numbers are all about the powers of ten:
+1
+10
+100
+1000
+10000
+etc.
+Each power of 10 adds a decimal digit
+Multiplying or dividing by 10 just shifts the digits
+It's weird, but we're used to it
+
+Mechanical calculators are built this way
+
+Computers only have two fingers
+It's ones and zeros because digital signals are either on or off
+Simplification of the "real" world!
+
+It's all about the powers of 2
+
+Binary numbers (base 2)
+0	   0
+1	   1
+2	  10
+3	  11
+4	 100
+5	 101
+6	 110
+7	 111
+8	1000
+9	1001
+...
+15	1111
+16	10000
+...
+31	11111
+32	100000
+...
+65535	1111111111111111
+Each power of two adds another binary digit
+Multiplying or dividing by 2 is just shifting the numbers
+
+Binary values represent two things:
+Data: Numbers, alphabetical characters, database records, etc.
+Instructions: that tell the processor what to do - Add, subtract, move, copy, load, store
+ 
+You need more transistors to move more bits
+
+What is the size of an instruction?
+How many different instructions do we need?
+VAX-11	243
+8086	81
+
+
+Pinwheel calculator: Add and Subtract
+
+What is the size of a unit of data?  
+How many different values do we need?
+
+To talk about
+The temperature of your house
+All of your pets
+Books on a shelf
+Books in a library
+Equations to solve an N-degree polynomial
+people in a meeting
+The number of dollars in your bank account
+The wealth of a nation
+The number of contacts in a phone list
+The number of airplane flights on a given day
+The number of hurricanes in a year
+The number of items in your shopping cart
+The number of radar inputs on a self-driving car
+The number of files on a disk drive
+The number of (visible) stars in the sky
+Elements in a finite-element model
+Structural members in a bridge
+Transistors in a CPU
+
+All the people in the US
+All the people who have ever lived
+
+Needs vary, and so do CPUs!
+
+Smaller numbers, fewer instructions = Cheaper
+Bigger numbers, more instructions = Expensive
+
+Example:  
+8-bit microcontroller suitable for a thermostat - 1 USD
+Example:  
+32-bit microprocessor suitable for a car - 100 USD
+Example:
+64-bit, 6 core midrange CPU for your laptop - 150+ USD
+
+How can we write code for these?
+Generally we trust a compiler to remember these things
+Soooo Many C/C++ compilers!
+But all tested to the standard
+
+The Standard Says:
+
+The fundamental unit is the Byte
+Must be big enough to represent a character
+there 96 characters used in C/C++ programming
+
+But not all bytes are created equal
+
+The 8-bit byte is queen
+
+Each byte in memory is individually addressable
+
+But not all addresses are created equal!
+
+Very compact!  Yay!
+
+Hello th
+is is a 
+sentence
+ about C
+++
+
+More readable!
+
+Hello
+this
+is
+a
+sentence
+about
+C++
+
+Similarly, a computer is more efficient when it can fetch larger chunks at a time
+
+"Word size" is the unit of storage that a CPU would prefer to fetch due to its hardware 
+Memory accesses are often done along word boundaries
+Typically
+8-bit machine 
+16-bit machine
+32-bit machine
+64-bit machine
+
+PDP-10	36 bits
+Harris
+Accessing a byte is not as fast 
+

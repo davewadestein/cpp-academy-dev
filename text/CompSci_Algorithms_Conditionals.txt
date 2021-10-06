@@ -1,0 +1,97 @@
+Conditionals
+
+Are used to help DECIDE what to DO
+
+What property would be useful to help me decide?
+
+How can I find it?
+
+How should I test it?
+
+What should I compare it to?
+
+What should I do after I know the results of the test?
+
+Delete it?
+Ignore it?
+Change it?
+Move it?
+Combine it with something else?
+Sort it?
+Put it in a special place?
+etc.
+
+The if Statement
+
+Syntax
+if ( conditional-expression ) statement;
+
+if ( conditional-expression ) {
+   statements;
+}
+
+if ( conditional-expression ) {
+   statements;
+} else {
+   statements;
+}
+
+Conditional operators
+
+a < b
+a > b
+a <= b
+a >= b
+a == b
+a != b
+
+
+Combining conditional expressions
+
+a && b
+a || b
+
+Negation
+
+!a
+
+
+Complex if statements
+
+Chained if
+
+if ( conditional ){
+
+} else if ( other-conditional ){
+
+} else if ( yet-another-conditional ){
+
+} else {
+
+}
+
+Nested if
+
+if ( conditional ) {
+  if (other-conditional) {
+
+  } else {
+
+  }
+} else {
+
+}
+
+These are hard to write, and hard to read!
+
+Better solutions
+Encapsulate conditional evaluations in functions
+Encapsulate branch logic in functions
+Encapsulate specific behavior in classes
+Use library containers and algorithms
+Prefer polymorphic subclasses rather than explicit if/else logic 
+
+You can always inline these
+
+The switch statement
+

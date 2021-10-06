@@ -1,0 +1,76 @@
+Order of Complexity
+
+For an algorithm with N inputs,
+expresses computational complexity as N increases
+
+N can grow pretty big sometimes
+Does our algorithm scale in a manageable way?
+
+Useful for ranking algorithms with large inputs
+Searching
+Sorting
+Inserting/Removing values from a set
+Vector math
+Transforms
+Signal Processing
+AI
+
+Big O Notation
+
+O(complexity as a function of N)
+e.g.
+Linear	O(N)	OK
+Exponential	O(N2)	Yikes!
+Logarithmic	O(logN)	Hmm
+
+Does not express computing load quantitatively
+"This will take 14 billion CPU cycles"
+"This will take 15 seconds on your PC"
+Does help us make decisions when we have a choice of algorithms
+"For this job, a Linked-list would generally be better than an Array"
+
+Which is Better?
+OofC	When	N=1	N=3	N=10	N=100
+
+O(1)	Constant	1	1	1	1
+O(logx N)	Logarithmic	0	1.58	3.32	6.64	
+O(N)	Linear		1	3	10	1000
+O(N^x)	Polynomial	1	9	100	10000
+O(x^N)	Exponential	1	8	1024	1.26e30
+O(N!)	Factorial	1	6	3628800	9.33e157
+
+We usually use log base 2 since computers have only two fingers
+
+Sometimes you get
+O(N^x log N)
+The scary part N^x predominates, but it's way better than N^(x+1)
+
+Common Algorithms
+
+Fortunately, many algorithms are already characterized!
+
+Binary Tree Search
+Linked List Search 
+Linked List Insert
+Bubble sort
+Classic Fourier Transform	O(n^2)
+Fast Fourier Transform	O(n log n)
+etc.
+
+Stars in the sky	4500
+Stars in the universe	10^23
+Atoms in the universe	10^82
+
+Memory Cost of Data Structures and Algorithms
+
+Things that affect memory
+Size of data type
+Depth of call stack
+Pass-by value vs pass-by-reference
+"Move" semantics
+Temporary variables in expressions
+Local variables
+ Unused locals get a warning, may be optimized away
+Oversized fixed buffers
+Size of link structures vs data itself
+A good data type does not have "optional" bits

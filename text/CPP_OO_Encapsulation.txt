@@ -1,0 +1,25 @@
+Encapsulation
+
+A well designed class
+
+Hides internal details
+Exposes a simple, well-understood API
+
+Tools
+
+Scope of data type
+
+Access qualifiers for members
+private:
+protected:
+public:
+
+Constantness
+
+RAII Initialization
+
+
+
+
+
+

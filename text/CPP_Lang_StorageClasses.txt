@@ -1,0 +1,52 @@
+Storage Classes
+
+static
+
+Applied to: global variable
+Implies that it is at file scope, and will not be shared outside the file
+Globals without the static keyword are file-scoped by default
+
+Applied to: data member of a class
+a "static" member variable is a single location shared by all instances of the class
+
+Applied to: function of a class
+A "static" function may be called outside the scope of any instance of the class
+Does not receive *this, so cannot access instance members
+Can access variables and functions declared "static" in current class
+Qualifies the names of functions that would otherwise be global
+
+volatile
+
+Applied to: a variable
+Implies that its value may change asynchronously by mechanisms outside the scope of the program
+Usually used to map a hardware address to a variable
+Implies value must always be read from its address when used, and will never be placed in a CPU register for optimization
+e.g., a sensor input 
+
+extern
+Applied to: a global function or variable
+Makes identifier available at link time to all program units
+Must be declared as "extern" in all files that use it
+Must be defined and initialized globally in one translation unit
+
+mutable
+
+Applied to: a data member of a class
+implies that variable is safe to change even in functions marked as const
+
+
+Obsolete storage classes
+
+auto
+Applies to: a local variable
+"automatic" variables are allocated on the stack
+Freed when out of scope
+Local variables are automatic by default
+So, the auto keyword now means something different
+
+register
+Applies to : a local variable
+"register" variables are a hint to the compiler
+Value should be placed in a CPU register rather than RAM
+Assumption is that it will be used a lot and and access needs to be optimized
+Modern compilers don't need your hints to deal with optimization

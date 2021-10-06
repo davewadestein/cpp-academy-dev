@@ -1,0 +1,50 @@
+Testing Software
+Testing
+Product meets requirements
+Product has no defects that will adversely impact normal use
+Find establish boundaries of "normal" use
+Meet regulatory criteria
+
+Software Requirements
+Functional
+Non-functional
+
+How to Test
+
+Static Analysis
+Examine source code for clumsy, obsolete, or incorrect usage
+
+Dynamic Analysis
+Run code with instrumentation to measure runtime characteristics
+
+Profiling
+Run code
+
+Unit Testing
+Test input/output and behavior of a single code unit 
+Usually a function or a class
+
+Debugging
+Follow code as it runs to see where it goes and what it does
+
+Code Reviews
+
+Specifications
+
+Automated Testing
+Some parts of testing can be automated
+Scheduled to run at a certain point in the development/build cycle
+Test protocols generated based on known hardware or software config
+
+Unit tests can be run when code is checked in 
+
+Continuous Integration
+Workflow that recompiles, links, tests, deploys and monitors software when it is modified
+Could be done by hand in a simple project
+Usually handled by a CI server
+Jenkins
+
+How continuous is it?
+Nightly builds
+Release builds
+

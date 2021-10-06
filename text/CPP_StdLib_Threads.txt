@@ -1,0 +1,94 @@
+Topic
+=====
+
+Description
+-----------
+
+Goals/Skills to be achieved
+---------------------------
+Will understand:
+Will be able to do:
+
+How to measure skill
+Exercise outline
+Grading rubrick
+
+Courseware
+----------
+Lesson slides
+Resources for students
+	Lab files
+	References
+	Exercise instructions
+	Quiz and or worksheet
+	Jokes
+	Required Props
+	
+Estimated time for lecture/lab
+
+Assigned Module/Section number
+
+TODO List:
+
+Threads
+
+Introduced in C++11
+
+Underlying threads are provided by the OS
+The std::thread class lets us access this functionality
+
+#include <thread>
+
+Each instance of the std::thread class can control a separate execution thread
+Has an ID
+Has a block of code to execute
+
+Starts immediately after construction
+Stops when the code is done
+
+
+Example
+
+// Write a function to do work
+void nice_work(){
+  std::cout <<  this_thread::get_id() << " is working very hard!" << std::endl;
+}
+
+Semantics
+std::thread t;	// Default Ctor - No function, so no thread yet
+
+t = std::thread( nice_work );  // Creates and starts thread - Assignment transfers control to t
+
+// Continue working in current thread
+std::cout <<  this_thread::get_id() << " is working too!" << std::endl;
+
+
+t.join();   // Wait for thread t to finish
+
+
+Controlling Threads
+All threads are equal
+It is rude (and dangerous) to try to force another thread to do anything
+Working with threads is all about being polite
+You don't really have the whole CPU
+Your thread is not intrinsically more important than others
+
+You can control the current thread with functions in the this_thread namespace
+
+this_thread::get_id	Get id of the current thread
+this_thread::yield	Politely suggest that other threads get a turn
+this_thread::sleep_for	Pause execution for a specified interval
+this_thread::sleep_until	Pause execution until a specified time 
+
+
+There's only two things you can do with another thread
+
+join	Wait for other thread to finish before going on
+detach	Set other thread free to roam, thread variable now meaningless
+
+In either case, the other thread finishes voluntarily when it returns
+
+Cooperating with Other Threads
+Share some information that convinces another thread to finish up
+Set a flag that is examined periodically
+
