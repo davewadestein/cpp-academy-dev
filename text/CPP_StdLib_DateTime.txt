@@ -6,7 +6,7 @@ Measured time since the beginning of the UNIX epoch
 1 Jan 1970
 
 
-The chrono library
+The C++ <chrono> library
 
 Clock
 Starts at a specified time (epoch) and ticks at a specified rate
@@ -42,3 +42,5 @@ A clock with the shortest tick period available
 Implementation dependent - sometimes used for measuring performance of a function call
 
 Example:  clocks_and_times.cpp
+
+Chronological literal values

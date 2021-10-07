@@ -1,76 +1,166 @@
 Topic
 =====
+How to Learn C++
 
 Description
 -----------
 Getting yourself and your workspace ready to learn C++
 
-Courseware
-----------
-Lesson slides
-Resources for students
-	Lab files
-	References
-	Exercise instructions
-	Quiz and or worksheet
-	Jokes
-	Required Props
-	
-Estimated time for lecture/lab
-
-Assigned Module/Section number
-
-TODO List:
-
-C++ is a lot like any human language
+Programming languages are human languages
 Roots in older languages
-Changes over time
-Adopts features of other languages
-Has recognizable periods of use
-	Latin	Germanic  French	Vowel shift		
+Change over time
+Adopt features of other languages
+Have recognizable periods of use
+Some last a long time
+We take them very personally
 
-Celtic
-Common Brittonic
-Old English
-Middle English
-Early Modern
-Modern
-Hipster Ironic Futurespeak
+English Language
+
+Adopts features from Celtic Latin Germanic French etc.		
+
+Celtic			Root Language
+Common Brittonic	Ancient
+Old English		|
+Middle English		Classical
+Elizabethan		Early modern
+Modern			Modern
+Hipster Ironic		|
+Doublespeak		Post Modern
+
+Some ancient forms survive
+Verily, Thou knowest this to be true.
+
+C++ Language
+
+Influences from Java, C#, etc.
+
+C		Root language
+C with classes	Ancient
+CFront		|
+C++		Classical
+C++98		|
+C++03		|
+C++11		Early modern
+C++14		Modern
+C++17		|
+C++20		|
 
 Some ancient forms survive 
+ *(c_ptr + 1)
 
-C
-C with classes
-C++
-C++98
-C++03
-C++11
-C++14
-C++17
-C++20
+Many local dialects
+Usage often constrainted by context (e.g. MISRA rules, "Modern" C++)
+People love to bicker about little things, like indentation
+Hot disagreement over "best" practice, and whether anything else is ever OK (yes)
 
-Ancient	Classical	Early Modern	Modern
-
-Has many local dialects and contexts
-People love to bicker about very closely related languages British, Australian
-Often constrainted by context
-Inspires hot disagreement over what is "real" English, and whether there are any other languages worth mentioning at all (there are)
-
-Read the manuals
-There's often several ways to do the same thing
+Read The Fancy Manuals
+You'll be googling a LOT!
+With a grain of salt
+There's usually several accepted ways to accomplish the same thing
 Old C way
 Classic C++ way
 Modern C++ way
-Ask for others' opinions; don't be surprised if they have strong feelings
+Ask for others' opinions; don't be surprised by strong feelings
 Stay calm
 Sense of humor
 Be adaptable
-Be methodical
-Resilience
+Be resilient
+"Don't be a Jerk"
+
+C++ is not like other languages
+Widely used
+Diverse environments and cultures
+Standardized by testable functionality, not sales reps
+
+You can't just learn the C++ language
+It is an ecosystem
+Toolchain
+Editor(s)
+Command shell(s)
+Git
+Testing tools
+etc.
+
+Compartmentalize
+Try to keep these things separate in your head
+You will have to switch contexts a lot
+Cheatsheets and checklists are good
+I will try to remember to tell you what I'm teaching at a given moment
+When in doubt, ask questions!
+
+Build your environment to help you switch contexts
+Reserve a place to code and study
+Include visual and sensory cues that mark your "study" space
+Use visual cues to distinguish your "coding" apps
+We'll be working together a LOT
+
+Organize your files
+Put course materials in a folder that is easy to get to
+Organize labs and handouts by subject
+Name folders and files to help your future self find them
+
+Organize your physical space
+Room for books, manuals
+Multiple screens are a big help
+Room to stretch
 
 
 
 How to learn it
+
+Be a Hummingbird
+Sip a lot
+Explore a lot
+Visiting your flowers frequently!
+Look at references even when you don't completely understand them
+
+Learning Language Syntax
+There's alot of muscle memory here
+Slow down
+Read word by word
+Use it, don't avoid it
+Write some things over and over until they feel right
+Spell out words completely a few times before relying on intellisense
+
+
+Consolidate your Memories every day
+Read and repeat concepts out loud
+Say it in other words
+Try it
+Try to tell someone else about it
+Take a break
+Sleep on it
+Consult expert viewpoints to understand WHY
+
+Work with a net!
+Examples
+Backups
+Code Management repositories
+IntelliSense / Code completion
+Debugger
+Fellow programmers
+
+Get Comfy
+You'll be doing a LOT of typing
+You'll be doing a LOT of reading
+Don't starve, don't glut
+Take bathroom breaks
+Hydrate
+Stand up and stretch!
+Have some treats nearby
+Get some sleep
+
+Ergonomic Setup
+Keyboard and monitor at the right height
+Large screen(s)
+Big, clear fonts
+Decent lighting
+A really good keyboard and mouse
+A comfortable chair
+A pleasant, context-establishing windows theme
+Reading glasses
+Footrest, armrest
+Keyboard stand
 
 Be a Protagonist in your Adventure
 
@@ -92,34 +182,18 @@ Learn by doing
 Get caught up in exciting things and have adventures
 Often have happy endings
 
-Get Over Your Ego
-Don't fear sharing
+Don't Worry
 This thing is huge, with plenty for everyone
-Nobody is going to eat it all before you get there
 Don't fear failure
 You literally can't break the machine in class
+You can't break my backup repository
 My Rubric is Holistic - you can't fail
 Don't be embarrassed
 I already made all the mistakes I could think of
 I left for you so you woudn't feel left out
 Savor your successes
 
-Be a Hummingbird
-Sip, don't gulp
-Explore a lot
-Defend your flowers!
-Look at references even if you don't completely understand them
 
-Go slow
-Use it
-Read it
-Write some things over and over until they feel right
-Lean on your tools
-Lean on your peers
-Consult expert viewpoints to understand WHY
-
-Go slow
-Think
 Make a plan
 Plans are Nothing; Planning is Everything. - Ed Repic
 
@@ -129,37 +203,15 @@ Decide WHAT you want as an end result
 Analyze HOW to get it 
 Consider WHY you should choose one way over another
 
-Consolidate memory
-Slow down and read word by word
-Read and repeat out loud
-Say it in other words
-Try it
-Repeat
-Take a break
-Sleep on it
-
-
-Work with a net!
-Backups
-Code Management
-IntelliSense / Code completion
-Debugger
-
-Get Comfy
-Don't starve, don't glut
-Take bathroom breaks
-Hydrate
-Stand up and stretch!
-Have some treats nearby
-
-Ergonomic Setup with keyboard and monitor at the right height
-Large screen(s)
-Decent lighting
-A really good keyboard and mouse
-A comfortable chair
-A pleasant windows theme
-Reading glasses
-Footrest, armrest
-Keyboard stand
-
+Analyzing a Problem
+Don't start coding immediately
+Go slow
+Take time to Think
+Pick problem apart and think about ONE small, concrete thing
+Draw a sketch or a diagram
+Make a physical model
+Find an analog in human interactions
+Write one tiny function at a time
+See if someone else has solved it already
+Don't worry about "elegant" and "efficient" until you have to
 
