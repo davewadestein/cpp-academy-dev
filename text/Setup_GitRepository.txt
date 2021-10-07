@@ -13,20 +13,30 @@ Clone a remote repo to your machine
 
 git clone -v http://github.com/pek-ia/cpp-academy
 
-Stage new and or changed files for the next commit
+Stage new and/or changed files for your next commit
 
 git add [filenames]
+
+Stage files that you've updated with a chance to pick
+
+Check the status of your staged files
+
+git status
 
 Commit changes to your local repo
 
 git commit
 
+Shortcut to stage and commmit all modified/deleted files (but not new ones)
+
+git commit -a
+
 Save changes back to a remote repo
 
 git push
 
-(BUT!  you can't do this with my repo unless I give you a token)
+(BUT!  you can't do this with MY repo unless I give you a token)
 
-Update your local repo to match the remote one
+Update your local repo to match the remote one (merge from remote)
 
 git pull
