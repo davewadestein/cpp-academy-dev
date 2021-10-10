@@ -11,6 +11,8 @@ Important git commands on your computer
 
 Clone a remote repo to your machine
 
+git clone -v repo-name
+for example, a remote repo:
 git clone -v http://github.com/pek-ia/cpp-academy
 
 Stage new and/or changed files for your next commit
@@ -40,3 +42,42 @@ git push
 Update your local repo to match the remote one (merge from remote)
 
 git pull
+
+Things that you might do while working on a design, and how to make git deal with it.
+
+Rename a file
+
+Move a file to different directory
+
+Replace a file with a completely different one with the same name
+
+Remove a file
+
+Add a file
+
+Change the filename extension (.cpp to .cc, for example)
+
+Why use git?
+
+Back up your precious source files
+Share files with others
+See what changes you've made without writing them down
+Track project history
+Associate changes with particular bug fixes, etc.
+Undo changes that turn out to be bad
+Revert to a known point in project history
+Branch off derivative code
+Merge branches
+
+
+Things to save in git:
+
+Source code files
+Test cases and inputs
+
+Things not to save in git
+
+Executables
+Binary files
+Data files that 'appear' to change content, but don't really
+Files that are regenerated on each new build

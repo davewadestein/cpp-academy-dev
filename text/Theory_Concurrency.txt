@@ -1,31 +1,110 @@
 Topic
 =====
+Concurrency vs Order
+
+Why do airports have restaurants, stores, and hotels?
 
 Description
 -----------
 
-Goals/Skills to be achieved
----------------------------
-Will understand:
-Will be able to do:
-
-How to measure skill
-Exercise outline
-Grading rubrick
-
-Courseware
-----------
-Lesson slides
-Resources for students
-	Lab files
-	References
-	Exercise instructions
-	Quiz and or worksheet
-	Jokes
-	Required Props
-	
-Estimated time for lecture/lab
-
-Assigned Module/Section number
+Concurrency:
+Independent workflows happening at the same time
+Order:
+Dependency between workflows to enforce ordering of overall progress 
 
 TODO List:
+
+Atom
+From Greek atomos, "not cuttable" -> "indivisible"
+A lovely thought, but...
+
+Atomic operation
+An unit of work which is irreducible and indivisible
+
+Digital computers
+A state machine
+Arrangement of bits
+
+Clock
+Essential technique of control and synchronization
+Regulates the units of progress
+Always moves in forward direction
+Moving to the next clock tick should be instantaneous
+Is it?
+
+Mechanical clocks
+Mechanical clocks have an escapement mechanism
+If teeth wear down, clock may get stuck or skip several ticks
+In practice, not all clocks, even of the same type, are of the same quality
+
+Electromechanical
+Turn switches on or off
+If contacts wear down, or arc, switch may get stuck or surge
+
+Electronic clocks
+Turn eensy switches on or off
+Produces square waves
+If resistance or material properties change (temperature, gamma rays, impurities, fab variances)
+Waves may not be square enough
+
+In practice, not all chips of the same type are of the same quality
+Parts are tested and "binned" for sale at different prices
+
+Crystal
+ 
+
+
+Embedded systems are very proud of their clocks
+
+Handing control between separate workflows depends on atomic operations
+The basis of orderly transfer
+Trains
+Assembly lines
+Paperwork
+Financial transactions
+Routing systems
+
+
+Concurrency
+Essential technique of efficiency
+Multiple workflows occur at the same time
+Independent and parallel
+Executed "out of order"
+More efficient when there are multiple processors, cores, people, machines, etc.
+
+Orderly transfer of control
+between
+Parallel workflows making their own decisions
+
+How to enforce atomicity that is "good enough"
+
+Processor atomic instructions
+Occur in a single clock tick
+read/write
+swap
+test and set
+fetch and add
+compare and swap
+
+Edsgar Dijkstra
+Mutual exclusion (1965)
+
+Do you trust your clock?
+How do you accommodate workflows that run longer or shorter or shorter than planned?
+
+Tolerate failure
+
+Introduce some "slop" at higher levels
+Don't depend on shortest path
+Let system "settle" between state transitions
+
+Detect failure
+Back off and try again
+
+
+Communicate between workflows to negotiate transfers
+
+Have excess capacity to deal with unexpectedly large workflows
+
+
+
