@@ -34,8 +34,9 @@ A character represents a unit of human script
 
 First thing you learn is your ABC's
 
-Has to be expressed (encoded) as a number
-Encodings
+For computer, is encoded as a number
+
+There are many encodings
 ASCII
 ISO Latin-1
 Unicode
@@ -43,17 +44,19 @@ Unicode
 Write code
 Input values to programs
 Output messages
-Used to communicate between people
+Communicate with people
 
-We are SO Lucky!!
 
 C++ source code depends on only 96 ASCII characters
+
+We are SO Lucky!!
 
 Alpha a-z and A-Z
 Numeric	0-9
 Punctuation
 
 Delimiters
+
 We love us our delimiters:
 
 { }	Braces, or "Curly Braces"
@@ -61,11 +64,14 @@ We love us our delimiters:
 < >	"Angle brackets"
 ( )	Parentheses, or "Parens"
 " "	Quotes, or "Double quotes"
+Note these are not typesetters matched L/R quotes
 ' '	Apostrophe, or "Single Quotes"
+Note these are not the same as "back quotes" "`"
 
+Delimiters must match and close
 
 We love our special characters, too!
 
-;	Semicolon	end of command
+;	Semicolon	end of statement
 
 

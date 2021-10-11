@@ -29,3 +29,108 @@ Estimated time for lecture/lab
 Assigned Module/Section number
 
 TODO List:
+
+Literals
+
+A Literal value is just a value
+
+Has a type
+
+Has no name
+
+Cannot be changed
+
+Examples
+
+42
+98.6
+"Can you hear me, Major Tom?"
+'X'
+
+Numeric literals
+
+A sequence of decimal digits
+[sign][base][value][type]
+
+There are several different numeric types
+integer, floating point, double precision
+Value may be decorated so compiler respects intended type
+
+Examples:
+
+42U
+98.8f
+-273.15
+3.14159
+
+Numeric values may be expressed in other numeric bases
+
+0b00010111	binary (base 2) starts with 0b
+042		Octal (base 8) starts with 0
+0x		Hexadecimal (base 16) starts with 0x
+
+Value may 
+
+Character literals
+
+A character is represented by the char data type
+
+char first_letter = 'A';
+char last_letter = 'Z';
+
+Literal is a single letter delimited by single quotes
+
+'A'
+
+Some characters are hard to distinguish in the editor
+White space characters - space vs. tab
+Special 'control' characters - newline vs. return
+
+We represent them with "escape sequences" in character and string literals
+
+Reference: https://en.cppreference.com/w/cpp/language/escape
+
+newline	\n'
+NULL	\0'
+Tab	\t'
+Backslash	\\
+
+Example:
+
+Output the string:
+I'm Robert O'Malley; just call me "Bob"
+
+
+
+
+Unicode Characters
+'u\
+
+
+
+
+
+
+
+
+String literals
+
+C-style strings
+
+Are represented by the char * data type
+
+char * host_name = "badger";
+
+
+C++ style strings
+
+Are represented by the std::string library type
+
+#include <string>
+
+std::string ship_name = "Kobayashi Maru";
+
+User-defined literals
+
+
+

@@ -1,0 +1,65 @@
+Math Libraries
+
+C Standard Math Library
+
+C Standard Math Library
+
+#include <cmath>
+
+double circle_area = std::pow(radius, 2.0) * 3.14159;
+
+Functions
+
+Logarithms and exponentials
+Power functions
+Trigonometric
+Hyperbolic
+Error and gamma
+Nearest integer
+Comparison
+Floating-point manipulation
+
+Reference: https://en.cppreference.com/w/cpp/numeric/math
+
+Complex Numbers
+
+#include <complex>
+
+
+Pseudorandom Numbers
+
+Why "pseudo"?
+
+Because they are generated algorithmically
+Generator is usually seeded with a value to start it
+Same seed produces same sequence of pseudorandom numbers
+Useful for writing repeatable tests
+
+"Truly" random numbers come from physical processes
+Radioactive decay
+Thermal noise
+Other quantum effects
+
+Old way:
+
+#include <cstdlib>
+
+int random_integer = std::rand();
+
+Where's the PI?
+
+Haughty voice:
+Isn't it "obvious" that you can compute it like this:
+
+const double PI = std::acos(-1);
+
+Okay, okay.  What about Euler's number, e
+
+Haughty voice:
+Must we tell you EVERYTHING?
+
+
+
+or in C++20
+
+std::numbers::pi
