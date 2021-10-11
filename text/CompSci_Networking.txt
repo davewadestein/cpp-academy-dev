@@ -1,0 +1,68 @@
+# Networking is Not in the C++ Standard Library
+
+## Inherently a concurrent environment
+
+## Many defacto networking models
+
+- Point-to-point
+- Broadcast
+- Streaming
+- Store/forward
+- Loopback
+
+## Large overlaps between usage
+
+### Hardware mechanisms, low-level system calls and high-level TCP/IP protocols often compete for the same jobs
+
+### Example: I want to send your thread a message that asks it to stop.  I could:
+
+- Set a global variable (atomically, of course)
+
+- Send you a POSIX signal
+
+- Send you a message through a UDP socket
+
+- Send you an HTTP POST request through a TCP socket
+
+### These are all asynchronous
+
+### All impose special responsibilities on both sender and receiver
+
+## Hard (impossible?) to guarantee equivalent support on all platforms, large and small
+
+### Embedded, standalone
+
+### Real Time OS's
+
+### UNIX-like OS's
+
+# Networking Libraries
+
+## Low-level chip-specific
+
+
+## Low-level POSIX
+
+- Signals, UDP, TCP
+
+## Operating-System specific
+
+- QNX IPC
+
+## High-level 'C' libraries
+
+
+## High-level (but not standard) C++ libraries with decent RIAA and OO designs
+
+- Asio
+
+- libuv
+
+## See for yourself: 
+
+- google `C++ networking libraries`
+
+
+
+
+

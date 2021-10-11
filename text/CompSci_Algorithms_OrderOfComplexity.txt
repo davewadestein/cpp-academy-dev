@@ -1,21 +1,19 @@
-Order of Complexity
+# Order of Complexity
 
-For an algorithm with N inputs,
-expresses computational complexity as N increases
+- For an algorithm with N inputs, expresses computational complexity as N increases
+- N can grow pretty big
+- Does our algorithm scale in a manageable way?
 
-N can grow pretty big sometimes
-Does our algorithm scale in a manageable way?
+## Useful for ranking algorithms with large inputs
+- Searching
+- Sorting
+- Inserting/Removing values from a set
+- Vector math
+- Matrix Transforms
+- Signal Processing
+- AI
 
-Useful for ranking algorithms with large inputs
-Searching
-Sorting
-Inserting/Removing values from a set
-Vector math
-Transforms
-Signal Processing
-AI
-
-Big O Notation
+# Big O Notation
 
 O(complexity as a function of N)
 e.g.
@@ -29,7 +27,7 @@ Does not express computing load quantitatively
 Does help us make decisions when we have a choice of algorithms
 "For this job, a Linked-list would generally be better than an Array"
 
-Which is Better?
+# Which is Better?
 OofC	When	N=1	N=3	N=10	N=100
 
 O(1)	Constant	1	1	1	1
@@ -45,9 +43,9 @@ Sometimes you get
 O(N^x log N)
 The scary part N^x predominates, but it's way better than N^(x+1)
 
-Common Algorithms
+# Common Algorithms
 
-Fortunately, many algorithms are already characterized!
+## Fortunately, many algorithms are already characterized!
 
 Binary Tree Search
 Linked List Search 
