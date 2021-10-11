@@ -1,11 +1,50 @@
-github.com
+# Git
 
-One of many services offering hosting of git repos
+Why use git?
 
-The repository for this course is
-http://github.com/pek-ia/cpp-academy
+Back up your precious source files
+Share files with others
+See what changes you've made without writing them down
+Track project history
+Associate changes with particular bug fixes, etc.
+Undo changes that turn out to be bad
+Revert to a known point in project history
+Branch off derivative code
+Merge branches
 
-It's a public repository, so I don't put anything there that would be confidential, trade secrets, or other private info.
+## Five Reasons to Use Git and github
+
+- Remote backup for your project files
+- Share project files with other developers
+- Manage software releases
+- View project history to see when bugs were fixed (or introduced)
+- Undo bad changes
+
+# Git in Three Sections
+
+## Each week we'll explore more features of Git
+
+- Week one: Basic git commands to set up a repository, commit and track changes
+- Week two: Collaborating with other engineers
+- Week three: Tracking and managing project branches
+
+## github.com
+
+- One of many services offering hosting of git repositories
+
+- The repository for this course is
+	`http://github.com/pek-ia/cpp-academy`
+
+- public repository, so I don't put anything there that would be confidential, trade secrets, or other private info.
+
+
+How to View and Download Code from github
+
+- View it on github, cut and paste
+- Download all or part of a repository as a zip file
+- Clone (or branch) the repository URL
+
+Demo: Tour of github
 
 Important git commands on your computer
 
@@ -57,27 +96,18 @@ Add a file
 
 Change the filename extension (.cpp to .cc, for example)
 
-Why use git?
-
-Back up your precious source files
-Share files with others
-See what changes you've made without writing them down
-Track project history
-Associate changes with particular bug fixes, etc.
-Undo changes that turn out to be bad
-Revert to a known point in project history
-Branch off derivative code
-Merge branches
 
 
 Things to save in git:
 
 Source code files
 Test cases and inputs
+README files
+Build files
 
 Things not to save in git
 
-Executables
+Executables and object files
 Binary files
-Data files that 'appear' to change content, but don't really
+Data files that 'appear' to change content regularly, but don't really
 Files that are regenerated on each new build
