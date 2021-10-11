@@ -1,6 +1,6 @@
 # cpp-academy-dev
 ## Welcome to our C++ Academy!
-This will be an immersive class; we are going swimming in the big, big river of C++.  Pack your snacks and sunscreen!  We will be covering a LOT of material, some conceptual and some purely technical.  All of this will be practical in the long run, because it will help you become a good C++ programmer.  
+We are going swimming in the big, big river of C++, so pack your snacks and sunscreen - it's going to be immersive!  We will be covering a LOT of material, some conceptual and some purely technical.  All of this will be *practical* in the long run, because it will help you become a good C++ programmer.  
 
 ## Primary References
 
@@ -8,9 +8,7 @@ Before, during, and after class, you'll constantly be consulting references, and
 
 [https://cppreference.com](https://cppreference.com)
 
-The best online reference for the C/C++ language and standard libraries.  Maintained by coders for coders.
-
-[https://cplusplus.com](https://cplusplus.com)
+Currently, the best online reference for the C/C++ language and standard libraries.  Maintained by coders for coders.
 
 [https://isocpp.org](https://isocpp.org)
 
