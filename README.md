@@ -4,13 +4,13 @@ This will be an immersive class; we are going swimming in the big, big river of 
 
 ## Primary References
 
-Before, during, and after class, you'll constantly be consulting references, and absorbing material from different points of view.  Here are some key online sources.
+Before, during, and after class, you'll constantly be consulting references, and absorbing material from different points of view.  Here are some key online sources:
 
 [https://cppreference.com](https://cppreference.com)
 
 The best online reference for the C/C++ language and standard libraries.  Maintained by coders for coders.
 
-https://cplusplus.com
+[https://cplusplus.com](https://cplusplus.com)
 
 [https://isocpp.org](https://isocpp.org)
 
