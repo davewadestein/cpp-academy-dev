@@ -29,3 +29,34 @@ Estimated time for lecture/lab
 Assigned Module/Section number
 
 TODO List:
+
+
+Object life cycle
+
+Step 1 - Allocate memory
+Step 2 - Acquire resources, initialize values
+Step 3 - Use, while enforcing invariants
+Step 4 - Release resources
+Step 5 - Free memory when done
+
+But, when?
+
+static
+Allocated at program start-up
+Exist until program exit
+May be cleaned up by destructors (if exit is controlled)
+
+automatic
+Local variables in functions
+Allocated on function entry
+Initialized by constructors in order encountered by compiler
+Freed when function returns
+Cleaned up by destructors in reverse order
+Enforced by compiler
+
+dynamic
+Allocated by new operator during run-time
+Freed by delete operator during runtime
+Programmer chooses when and where!
+
+(Leaving out special-cases volatile and const for the moment)

@@ -1,0 +1,119 @@
+Functions
+
+A function is a block of code that can be called
+
+Has a name
+
+May accept parameters
+
+May return a value
+
+A function must be declared and defined
+Declaration says how to call it
+Definition is the code that does the work
+
+The compiler doesn't always need these at the same time
+
+int main(){ 
+
+  int x {0};
+  x = multiply( 23, 45 );
+
+};
+
+The compiler wants to think about one thing at a time.
+Each function is compiled separately
+When the compiler is processing main, it's not going to look inside the multiply function
+We have to assure the compiler that it "could" work
+
+As always, the compiler knows what's legal by type
+
+Each function has a signature, based on the data types of its parameters
+
+The compiler Works in a Straight Line
+
+Needs a declaration of multiply before it can determine if main is syntactically correct
+
+Only needs the definition of multiply when it compiles it
+
+We hate to write anything twice
+Data types and functions are often declared and defined before main
+Completely common, not controvesial
+
+int multiply(int x, int y){
+  return x * y;
+}
+
+int main(){
+  
+}
+
+
+Some people like to see main first
+The compiler is satisfied by a "forward declaration"
+also called a "function prototype"
+
+// Declare function prototype
+
+int multiply(int x, int y);
+
+int main(){
+  // Use it
+  x = multiply(42, 95);
+}
+
+// Don't forget to define it, later
+int multiply(int x, int y){
+   return x * y;
+}
+
+
+Function Overloading
+
+Multiple functions can have the same name, but different parameters
+
+int multiply(int x, int y){
+  // math is simple, but check for overflow
+}
+
+double multiply(double x, double y){
+  // Math is slightly harder
+  // Be sure to round off correctly
+}
+
+std::complex multiply(std::complex x, std::complex y){
+  // Lots of math
+}
+
+int multiply(int x, int y, int z){
+  return x * y * z;
+}
+
+The compiler chooses the correct overload by the signature
+
+
+Function Signature
+
+Name and scope
+Number of parameters
+Type-order of parameters
+
+Ignored:
+Return type
+There's no requirement that you use return value, even if there is one
+
+void multiply(Rabbit mom, Rabbit dad){
+   // ... Consumes all memory
+}
+
+So, a function prototype doesn't even have to name the parameters or declare the return type
+
+multiply (int, int);
+multiply (double, double);
+multiply (std::complex, std::complex);
+
+These are legal, so you might have to read this
+but please,
+DON'T DO THIS!
+
+Default Parameters

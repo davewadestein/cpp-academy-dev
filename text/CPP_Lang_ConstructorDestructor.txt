@@ -29,3 +29,32 @@ Estimated time for lecture/lab
 Assigned Module/Section number
 
 TODO List:
+
+Constructor
+
+Constructors are overloaded, like other functions
+
+Several special forms enshrined in the spec:
+
+Default constructor
+
+Takes no arguments
+
+Copy constructor
+
+Takes one argument of surrounding type (ref)
+
+Move constructor
+
+Takes one argument of surrounding type (rvalue ref)
+
+Conversion constructor
+
+Takes one argument of some other type
+
+
+
+Destructor
+
+Never overloaded, because there is only one form
+Should be declared virtual

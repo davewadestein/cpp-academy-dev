@@ -29,3 +29,8 @@ Estimated time for lecture/lab
 Assigned Module/Section number
 
 TODO List:
+
+Data is held in variables
+
+
+Static
