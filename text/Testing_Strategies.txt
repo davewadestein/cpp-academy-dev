@@ -29,3 +29,84 @@ Estimated time for lecture/lab
 Assigned Module/Section number
 
 TODO List:
+
+
+Ensuring quality code
+
+How do you know that code is "good"?
+
+There's nothing wrong with it (so far as we can prove).
+
+So you try very hard to find something wrong
+
+It compiles
+So, syntactically parseable, anyway
+
+By inspection
+A competent programmer could tell you that it looks OK
+
+By code review
+A group of competent programmers critique it
+structure, style, semantics, clarity, concepts, appropriate algorithms
+
+By automated testing
+Anyone can run the tests at any time
+
+By running it
+Quality Assurance 
+Beta Testing with customers
+
+By fixing and maintaining it
+Bug reporting system
+JIRA
+
+So far, we can write code that:
+Compiles
+Looks reasonable
+Isn't obviously insane
+
+Let's do some testing!
+
+Object-Oriented testing!
+
+Functional Testing!
+
+
+Write a little program
+
+Create an object
+
+Call a function
+
+See if it produced the "expected" result
+
+You're Entitled to Have Expectations
+
+Known input/output combinations
+Test cases
+Known cases solved some other way
+
+Test-Driven Development
+
+Write a test that proves that a bug exists
+
+Or a feature doesn't exist yet
+
+Fix the bug
+
+Pass the Test
+
+Refactor code to make it clean and readable
+
+Pass the Test again
+
+Run and pass all the tests!
+
+Go on to the next bug or feature
+
+Non-Functional Tests
+
+Standards compliance
+
+Efficiency/Optimization
+

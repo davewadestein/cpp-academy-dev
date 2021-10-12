@@ -30,14 +30,36 @@ Assigned Module/Section number
 
 TODO List:
 
-The preprocessor prepare source code for the compiler
-Produces a single (possibly large) file for each compilation unit
+The preprocessor is a vital part of the C++ toolchain
 
-Includes contents of other files
+The preprocessor prepares source code for the compiler
+Reads your source code
+Merges it with other source files
+Conditionally defines types, variables and functions
+Performs lexical substitutions "macros"
+and finally,
+Produces a single (possibly very large) file for each compilation unit
+
+Includes
+
+The #include directive incorporates another source code file as though you had typed it right there
+
 
 #include "MovieTicket.h"
 
-Can define preprocessor variables
+
+By convention, included files are called "header files"
+
+Use ".h" as a file extension
+
+Technically, you could include code that is not strictly C++, or is only a partial declaration
+
+(Please, don't)
+
+
+But the finished result had better be something the compiler can read
+
+Preprocessor variables
 Features that can be tested
 Exist/noexist
 #ifdef FOO
@@ -55,6 +77,7 @@ Names that start with _ are reserved for the use of the toolchain!
 
 Header File Guards
 
+// beginning of file
 #ifndef CINEMA_MOVIE_TICKET_H
 #define CINEMA_MOVIE_TICKET_H
 
@@ -65,6 +88,7 @@ struct MovieTicket {
 }
 
 #endif
+// end of file
 
 Compile-time substitution of constant values
 

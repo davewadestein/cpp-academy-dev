@@ -8,7 +8,7 @@ Clean Code
 
 Is easier to read
 Offers fewer places for bugs to hide
-Highlights programming language natural constructs
+Highlights your programming language natural constructs
 
 A place for everything
 Each line of code has a place where it would be best
@@ -21,7 +21,11 @@ How will you fix them
 
 How to tell Clean Code
 
+Follows conventions
 Clear names for everything
+Short functions
+Appropriate abstractions
+Appropriate algorithms
 Follow your organization's conventions
 
 

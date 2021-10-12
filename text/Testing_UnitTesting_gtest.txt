@@ -4,10 +4,22 @@ Topic
 
 TODO List:
 
-Google Test is a framework for testing C++ code
+GoogleTest is a framework for unit testing C++ code
 Supplied as a header file
 
-Writing a Test
+Get Google Test
+
+https://github.com/google/googletest
+
+Include gtest header
+
+Write test cases
+
+Run tests
+
+Rejoice
+
+Writing a Unit Test
 
 Arrange-Act-Assert
 
@@ -18,10 +30,10 @@ Create dependent objects and values
 Act
 Call a function, passing input values
 
-Asserting
+Assert
 Check that output values and behavior are "as expected"
 
-This has to be easy and fast, or you won't it.
+This has to be easy and fast, or you won't do it.
 
 Tests must be:
 
@@ -32,3 +44,14 @@ Fast to run
 Runnable by anyone
 Easy to automate
 Pass or Fail 
+
+Unit Testing Philosophy
+
+Black Box
+
+White Box
+
+Behavioral
+
+Mocking
+
