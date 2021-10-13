@@ -1,0 +1,33 @@
+What is Agile?
+
+A set of techniques and principles for making software development more responsive to changes in need, environment and functionality.
+
+Stated in 2001 at the "Snowbird" meeting
+
+One of the first to address "Values"
+
+Values
+
+The Agile Manifesto
+
+We are uncovering better ways of developing
+software by doing it and helping others do it.
+Through this work we have come to value:
+
+Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+
+That is, while there is value in the items on
+the right, we value the items on the left more.
+
+Link: https://agilemanifesto.org/
+
+Many schools of technique, plenty of books:
+
+SCRUM
+eXtreme Programming
+Test-Driven Development
+etc.
+

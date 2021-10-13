@@ -29,3 +29,81 @@ Estimated time for lecture/lab
 Assigned Module/Section number
 
 TODO List:
+
+Smart Pointers
+
+A "raw" pointer is just a simple (usually 32-bit or 64-bit) variable that holds an address
+
+Animal *a = new Cat;
+a->feed();
+
+But, addresses are used for EVERYTHING and ANYTHING
+
+What really matters is what we find when we follow it
+
+What's really there?
+
+Is it an object?
+
+Is it a function?
+
+What can we do with it?
+
+a->talk();
+
+Is anything there at all?
+
+Animal *a = 0x0;
+
+Problems with raw pointers:
+
+Mis-Cast
+
+They are easy to push around in C
+
+Cat *c = new Cat;
+Dog *d = (Dog *)c;  // Wrong on so many levels
+
+Dangling
+Address takes us to memory that has been freed, but might still contain "some" data
+
+Cat *c = new Cat;
+Animal *a = c;
+delete c;
+
+a->talk();
+
+Decayed
+Address takes us to the beginning of an array, but we don't know how big it is
+
+Cat mypets[3];
+feedMyPets(mypets);
+
+Leaked
+Pointer variable goes out of scope, or is set to a different address, but doesn't free the memory it used to point to
+
+Cat *c = new Cat;
+c = std::null_ptr;
+
+// Oops.  Lost Cat.
+
+You have two choices:
+Be very, very cautious
+Abandon C-style raw pointers.  Use C++ smart pointers
+
+A C++ smart pointer is an object that holds an address.
+
+An object has 
+constructor(s) - Can accept or reject the value it is given
+overloaded operator(s) - Can track ownership, number of references when used in code
+destructor - Can free the pointed-to object when destroyed
+
+int play_with_cat()
+{
+  std::unique_ptr<Cat> c = std::make_unique;
+  c->play();
+  c->feed();
+  
+} // End of scope; no more variable c, Cat freed automatically
+
+

@@ -1,0 +1,91 @@
+Object Oriented Design Principles
+
+Values
+Principles
+Conventions
+Best Practices
+Checklists
+
+Responsibilities
+
+The responsibilities of a class:
+To "know" something in its variables
+Part of knowing may be enforcing internal invariants
+To "do" something in its functions
+A class performs these services not for itself, but for others!
+
+At run-time, we see our objects as little chunks of code and data that depend on each other
+
+During development, we establish the nature of these dependencies
+Inheritance
+Containment
+Encapsulation
+Function parameters, return values
+etc.
+
+The API of a class is the contract between that class and the world
+
+Contracts imply two-way responsibilities
+
+It's best to keep responsibilities simple, constrained, and easy to perform
+
+Enforcement
+
+From without:
+Allows relative novices to do some work
+there will be some wasted work
+From within:
+Requires time to internalize rule sets
+There will be some time spent thinking
+
+If you think, you'll get better at it
+Enforcement from within will be more efficient over time
+
+
+Principles
+
+Principles inform our actions
+
+In software, choose principles that produce better code
+
+Exercise: What is "better" code?
+
+
+Some Software Principles
+
+We love our acronyms
+
+KISS - "Keep it Simple, Stupid"
+DRY - "Don't Repeat Yourself"
+YAGNI - "You aren't going to need it"
+SOLID
+
+SOLID Principles
+ 
+Single Responsibility principle
+
+Each software artifact has exactly one reason to change
+When you write a function, focus on exactly what it does
+When you choose a data type, focus on exactly what it needs to know
+etc.
+
+Open/Closed principle
+
+Software constructs are open for extension, but closed for modification
+New features are implemented by adding new code, not by changing old code that already works
+
+Liskov Substitution principle
+
+Code that works with a pointer/reference to an object of type T, must work with any of T's subclasses without modification
+
+Interface Segregation principle
+
+Several client-specific interfaces are better than one general-purpose interface
+
+Dependency Inversion principle
+
+Depend on abstractions, not concretions.  
+There's no high-level and low-level code, only contracts.
+
+From Robert Martin's Engineering Notebook columns in The C++ Report
+
