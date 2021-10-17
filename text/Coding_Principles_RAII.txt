@@ -57,7 +57,7 @@ Call member functions to use resources, if necessary
 Destruction
 free resources in dtor
 
-Of course, all well-behaved sub-objects will take care of themselves
+Of course, all well-behaved sub-objects take care of themselves
 
 
 
@@ -71,7 +71,7 @@ void get_part_from_restful_catalog(std::string& part_number){
   hrsa.get( param_list);
 
 
-  // hmg, my_base_url, param_list go out of scope
+  // hrsa, my_base_url, param_list go out of scope, get cleaned up
 } 
 
 The RAII pattern can be used on many types of transient resources
@@ -83,5 +83,10 @@ Mutexes
 Threads
 Files
 strings
+
+Example:
+std::unique_ptr for dynamically allocated objects
+std::lock_guard for mutex
+
 
 Example: the_talking_stick.cpp

@@ -29,3 +29,36 @@ Estimated time for lecture/lab
 Assigned Module/Section number
 
 TODO List:
+
+Interrupts
+Conditions detected by the CPU hardware that interrupt the execution of a program
+
+Signals
+A limited form of inter-process communication (IPC)
+POSIX-compliant operating systems
+
+The kernel may pass an interrupt as a signal to the process that caused it (typical examples are SIGSEGV, SIGBUS, SIGILL and SIGFPE).
+
+
+
+Asynchronous
+ notification sent to a process or to a specific thread within the same process to notify it of an event. 
+
+Common uses of signals are to interrupt, suspend, terminate or kill a process
+Interrupts the target process' normal flow of execution
+Can interrupt during any non-atomic instruction
+If the process has previously registered a signal handler, that routine is executed. Otherwise, the default signal handler is executed.
+
+Low latency
+
+What to do in a signal handler
+Set a shared atomic variable and return
+std::terminate
+
+Swear words:
+setjmp/longjmp
+
+In a hosted environment
+
+
+In a standalone environment

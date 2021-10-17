@@ -1,0 +1,27 @@
+Low-level
+
+Interrupt
+
+Triggered by a signal detected at a hardware pinout
+Example: ARM architecture provides two Interrupt inputs
+Optional hardware can support queuing and prioritization of interrupts from multiple sources
+
+Watchdog timer
+Detects if program has a deadlock, or has stopped
+Must be reset periodically by application
+If not reset, triggers an interrupt
+
+
+Shared memory
+Same memory is mapped to more than one program
+Often used for producer/consumer 
+Requires synchronization!
+
+Atomic operation - guaranteed uninterruptible, usually takes one clock cycle
+HW Semaphore
+HW Mutex
+
+Signal
+
+
+

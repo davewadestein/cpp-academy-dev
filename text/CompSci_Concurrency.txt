@@ -2,7 +2,7 @@ Topic
 =====
 Concurrency vs Order
 
-Why do airports have restaurants, stores, and hotels?
+Why do airports have hotels?
 
 Description
 -----------
@@ -105,6 +105,23 @@ Back off and try again
 Communicate between workflows to negotiate transfers
 
 Have excess capacity to deal with unexpectedly large workflows
+
+Synchronization
+
+If multiple workflows never share data, they are independent
+
+If multiple workflows only READ shared data, OK
+
+If even ONE workflow WRITES shared data, then access to that data must be synchronized by all threads
+
+Critical Section
+
+A piece of code in which shared resources are accessed
+
+Synchronization must be enforced
+
+Usually delimited by the boundaries of a function call
+
 
 
 

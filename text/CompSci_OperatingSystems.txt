@@ -1,0 +1,32 @@
+Operating System
+
+Supports multiple programs accessing shared resources
+CPU
+Memory
+I/O devices
+Storage devices
+Network
+Special hardware (GPUs, array processors, etc.)
+
+Operating system Services
+Scheduling
+Synchronization
+Memory management
+Access to devices
+
+
+Types of Operating System
+
+No OS
+Bare metal or standalone implementations
+
+General-purpose OS
+Linux
+Windows
+Balances needs of multiple programs on best-effort basis
+
+Real-Time Operating System
+Guarantees response to events
+
+Special-Purpose OS
+Android

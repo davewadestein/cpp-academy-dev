@@ -37,12 +37,40 @@ Occupy a single slot in memory
 Fit into a machine register
 Values have no semantics
 
+
+Numeric types
+
 Integer Types
+
+Integer Literals
+
+Watch out for leading Zeros!
+
+0
+0x
+0b
+
 Floating Point Types
-Numeric Literals
+
+FP Literals
+
+
 Characters
+
 Character Literals
-Strings
+A literal character goes in single quotes
+Single character = single quotes
+'A'
+'z'
+
+\u
+\U
+
+C-style strings
+Actually a pointer type!
+
 String Literals
+
 Promotion and Truncation
 Overflow and Wrapping
+Conversion

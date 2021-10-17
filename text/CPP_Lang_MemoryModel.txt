@@ -38,3 +38,10 @@ Uniquely addressable
 
 Available memory
 One or more sequences of contiguous bytes
+
+Implementation-dependent
+Size of basic data types
+Alignment
+Binary representation of values
+
+C++11 defines types and values that are more portable

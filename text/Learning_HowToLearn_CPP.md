@@ -232,6 +232,11 @@ I already made all the mistakes I could think of
 I left for you so you woudn't feel left out
 Savor your successes
 
+Things you think you'll NEVER get, but you will!
+Pointers
+Memory management
+Thread synchronization
+Templates
 
 Make a plan
 Plans are Nothing; Planning is Everything. - Ed Repic

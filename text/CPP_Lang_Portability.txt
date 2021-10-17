@@ -1,0 +1,93 @@
+C++ Portability
+
+Early C exploits ambiguity to achieve better alignment with hardware and OS
+
+C++ Source-Code Portability
+
+We could wish for:
+A language that is impossible to misuse
+Unambiguous and context-free
+yet
+terse and simple
+Sorry
+Too many syntactic possibilites
+
+We have to settle for:
+A subset of the language that is functionally unambiguous
+"Defined behavior"
+
+It is possible to write code that runs in a functionally equivalent way on diverse machine architectures.
+
+Portability is possible because compilers and the standard libraries must pass functional tests
+
+Standard libraries encourage proper use of the functionally unambiguous subset
+
+
+However, the standard and the compilers both have bugs.  At least we're trying!!!
+
+
+It can do this only if you follow the rules
+
+General rules:
+If there is already a conventional solution, use it
+PODS
+Default method implementations
+Features provided by C++ standard library
+
+If similar functionality is provided by the C standard library, prefer the C++ lib
+Do not invest even one moment of your time in "tricks" until you know the risks
+Do not second-guess the compiler
+
+But physical machines ARE different:
+
+You must respect:
+Type sizes are expressed in bytes
+A byte is >= 8 bits
+  CHAR_BIT macro constant tells you the truth
+Datatype sizes and limits
+  sizeof operator
+  std::size_t in <cstddef>
+
+Datatype value limits
+
+  std::numeric_limits<> template
+  In <limits>
+
+  Macro constants defined in C libraries
+  <climits>
+  <cstdint>
+  <cfloat>
+
+Datatype semantics
+
+Datatypes are not required to support all operators
+Binary operators do not support all possible type combinations
+
+Datatype alignment
+  alignof operator
+  alignas specifier
+
+Conventions for copying/moving values
+Conventions for allocating and freeing dynamic memory
+Conventions for synchronizing threads and workflows
+
+But the biggest requirement is:
+
+NEVER invoke Undefined Behavior (UB)
+
+C++ defines fundamental syntactic constructs
+"Proper" C++ puts some of these off-limits
+
+
+
+If there are no rules for what you do, that is Undefined Behavior (UB)
+
+Does not address all your non-functional concerns
+
+Size, location and/or type of program or data memory
+
+Optimization of machine code
+
+Time-critical operations
+
+Safety/Security

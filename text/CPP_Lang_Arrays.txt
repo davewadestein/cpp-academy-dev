@@ -54,7 +54,7 @@ Use a value
 auto first_number = lotto_numbers[0];
 auto second_number = lotto_numbers[1];
 
-Last index is sizeof(array) - 1
+Last index is sizeof(lotto_numbers) - 1
 
 
 
@@ -90,3 +90,4 @@ Multi-dimensional array
 May be declared statically, so:
 
 double transform_matrix[3][3];
+
